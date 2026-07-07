@@ -1,0 +1,36 @@
+# ==========================================================
+# Water Quality Monitoring — Configuration
+# Do NOT commit real credentials. Use environment variables
+# or a local config/secrets.yaml (already gitignored) instead.
+# ==========================================================
+
+mqtt:
+  broker_host: "broker.hivemq.com"   # replace with your broker
+  broker_port: 1883
+  topic: "waterquality/sensors"
+  client_id: "water-quality-subscriber"
+  keepalive: 60
+
+thingspeak:
+  channel_id: "YOUR_CHANNEL_ID"
+  write_api_key: "YOUR_WRITE_API_KEY"
+  update_url: "https://api.thingspeak.com/update"
+
+aws:
+  region: "ap-south-1"
+  s3_bucket: "water-quality-telemetry"
+  s3_prefix: "raw-readings/"
+  # Credentials should come from environment variables
+  # (AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY) or an IAM role,
+  # never hardcoded here.
+
+model:
+  artifact_path: "src/model/water_quality_model.pkl"
+  features: ["ph", "turbidity", "tds"]
+  target: "potable"
+
+thresholds:
+  ph_min: 6.5
+  ph_max: 8.5
+  turbidity_max_ntu: 5.0
+  tds_max_ppm: 500
