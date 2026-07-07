@@ -1,14 +1,14 @@
 # 💧 AI-Cloud-IoT Water Quality Monitoring System
 
-An end-to-end, automated hardware and software solution that transitions water quality management from manual sampling to real-time, predictive environmental monitoring[cite: 3]. 
+An end-to-end, automated hardware and software solution that transitions water quality management from manual sampling to real-time, predictive environmental monitoring. 
 
 ## 📖 Project Overview
-Conventional water testing relies on expensive, time-consuming laboratory analysis[cite: 3]. This project solves that latency by deploying a continuous edge-to-cloud pipeline[cite: 3]. It utilizes IoT sensors to gather physical data, cloud platforms for secure data transmission, and machine learning models to classify water health and predict contamination events before they escalate[cite: 3].
+Conventional water testing relies on expensive, time-consuming laboratory analysis. This project solves that latency by deploying a continuous edge-to-cloud pipeline. It utilizes IoT sensors to gather physical data, cloud platforms for secure data transmission, and machine learning models to classify water health and predict contamination events before they escalate.
 
 ## 🚀 Key Achievements & Impact
-*   **High-Accuracy ML Predictions:** Achieved up to 94% accuracy in forecasting long-term contamination trends using historical data modeling[cite: 3]. 
-*   **Real-Time Latency:** Engineered a system with less than 5 seconds of delay between a physical water quality change and its reflection on the cloud dashboard[cite: 3].
-*   **Automated Emergency Response:** Implemented an alert engine that instantly triggers SMS/Email notifications to stakeholders if critical safety thresholds are breached[cite: 3].
+*   **High-Accuracy ML Predictions:** Achieved up to 94% accuracy in forecasting long-term contamination trends using historical data modeling. 
+*   **Real-Time Latency:** Engineered a system with less than 5 seconds of delay between a physical water quality change and its reflection on the cloud dashboard.
+*   **Automated Emergency Response:** Implemented an alert engine that instantly triggers SMS/Email notifications to stakeholders if critical safety thresholds are breached
 *   **Published Research:** The architecture and findings of this system were published as first-author research. 
 
 ## 🛠️ Technical Architecture
@@ -16,17 +16,17 @@ Conventional water testing relies on expensive, time-consuming laboratory analys
 This system is built across three distinct engineering layers:
 
 ### 1. Edge & Data Acquisition (Hardware)
-*   **Microcontroller:** ESP32 acting as the primary edge processing node[cite: 3].
-*   **Sensor Array:** High-precision probes measuring pH, Turbidity, Total Dissolved Solids (TDS), and Temperature (DS18B20)[cite: 3].
-*   **Local Interface:** I2C-enabled LCD display for immediate, on-site data verification[cite: 3].
+*   **Microcontroller:** ESP32 acting as the primary edge processing node.
+*   **Sensor Array:** High-precision probes measuring pH, Turbidity, Total Dissolved Solids (TDS), and Temperature (DS18B20).
+*   **Local Interface:** I2C-enabled LCD display for immediate, on-site data verification.
 
 ### 2. Networking & Cloud Integration
-*   **Protocols:** Wi-Fi and MQTT for lightweight, reliable data packaging[cite: 3].
-*   **Cloud Platform:** Integrated with ThingSpeak (and Firebase) for remote synchronization, secure database storage, and real-time telemetry dashboards[cite: 3].
+*   **Protocols:** Wi-Fi and MQTT for lightweight, reliable data packaging.
+*   **Cloud Platform:** Integrated with ThingSpeak (and Firebase) for remote synchronization, secure database storage, and real-time telemetry dashboards.
 
 ### 3. Intelligence & Analytics Layer
-*   **AI Models:** Random Forest and Long Short-Term Memory (LSTM) networks utilized for time-series forecasting and classification[cite: 3].
-*   **Decision Logic:** Evaluates incoming multi-sensor data against learned patterns to automatically classify water as *Safe*, *Moderate*, or *Unsafe*[cite: 3].
+*   **AI Models:** Random Forest and Long Short-Term Memory (LSTM) networks utilized for time-series forecasting and classification.
+*   **Decision Logic:** Evaluates incoming multi-sensor data against learned patterns to automatically classify water as *Safe*, *Moderate*, or *Unsafe*.
 
 ## ⚙️ How to Run the Project
 
